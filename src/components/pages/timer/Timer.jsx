@@ -29,6 +29,18 @@ function Timer() {
       }
     }, 1000);
   }, [seconds]);
+
+  // function skip() {
+  //   if (displayMessage === false) {
+  //     setSeconds(0);
+  //     setMinutes(5);
+  //     setDisplayMessage(true);
+  //   } else {
+  //     setSeconds(59);
+  //     setMinutes(24);
+  //     setDisplayMessage(false);
+  //   }
+  // }
   return (
     <div className="timer">
       <div className="timerTitle">Pomodoro Timer</div>
@@ -38,6 +50,7 @@ function Timer() {
       <div className="timerBody">
         {timerMinutes}: {timerSeconds}
       </div>
+      <div className="skip">{/* <button onClick={skip}>Skip</button> */}</div>
     </div>
   );
 }
